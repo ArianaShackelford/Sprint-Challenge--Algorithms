@@ -12,6 +12,7 @@ c) I don't entirely know how to guage the time complexity with recursive functio
 
 ## Exercise II
 I think the most logical aproach for this is problem would be to use binary search, because it's a building the floors are already sorted so it can be used here.
+because this is using a binary sort the time complexity would be `O(log n)`
 
 while the number of floors being tested are > 1:
     start on the middle floor and drop and egg from there,

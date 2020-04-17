@@ -97,7 +97,41 @@ class SortingRobot:
         Sort the robot's list.
         """
         # Fill this out
-        pass
+        set_light_on()
+        print('Hello, I am your sorting robot')
+
+        while light_is_on():
+            for num in range(0, len(l) -1):
+                
+
+'''
+It can move left or right.
+It can pick up an item
+If it tries to pick up an item while already holding one, it will swap the items instead.
+It can compare the item it's holding to the item in front of it.
+It can switch a light on its head on or off. '''
+
+
+        #when program is started set_light_on()
+        #welcome message - "Hello, I am your sorting robot"
+        #while light_is_on:
+        #for every item in the list
+        #swapped = False
+            # sort through everything unsorted:
+                # the current index = the held item
+                # if can_move_right() == True:
+                    #move_right
+                    #if compare_item() == 1:
+                        #swap_item()
+                        #swapped = True
+                    #if compare_item() == -1 or 0:
+                        #move_left()
+                        #swap_item()
+                #if swapped False:
+                #set_light_off()
+                # break  
+        #return l
+
 
 
 if __name__ == "__main__":
