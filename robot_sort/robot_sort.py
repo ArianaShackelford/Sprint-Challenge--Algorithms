@@ -97,11 +97,27 @@ class SortingRobot:
         Sort the robot's list.
         """
         # Fill this out
-        set_light_on()
+        self.set_light_on()
         print('Hello, I am your sorting robot')
 
-        while light_is_on():
-            for num in range(0, len(l) -1):
+        while self.light_is_on():
+            # for num in range(0, len(l) -1):
+                self.swap_item()
+                if self.can_move_right == True:
+                    self.move_right()
+                
+                # for unsorted in range(0, len(l)-1):
+                if self.compare_item() == 1:
+                    self.swap_item()
+                    self.move_left()
+                if self.compare_item() == -1 or 0:
+                    self.move_left()
+                if self.compare_item() == None:
+                    return None
+
+        self.set_light_off
+        
+
                 
 
 '''
