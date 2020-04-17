@@ -97,7 +97,7 @@ class SortingRobot:
         Sort the robot's list.
         """
         #my pseudocode
-'''
+        '''
          #when program is started set_light_on()
         #welcome message - "Hello, I am your sorting robot"
         #while light_is_on:
