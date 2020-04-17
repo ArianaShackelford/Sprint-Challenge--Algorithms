@@ -123,7 +123,7 @@ class SortingRobot:
         while self.light_is_on():
             # for num in range(0, len(l) -1):
                 self.swap_item()
-                if self.can_move_right == True:
+                while self.can_move_right == True:
                     self.move_right()
                 
                 # for unsorted in range(0, len(l)-1):
