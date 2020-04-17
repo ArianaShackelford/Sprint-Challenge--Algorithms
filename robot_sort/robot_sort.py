@@ -116,20 +116,18 @@ It can switch a light on its head on or off. '''
         #welcome message - "Hello, I am your sorting robot"
         #while light_is_on:
         #for every item in the list
-        #swapped = False
+            #swap_item() ---> something in my hand now
+            # if can_move_right() == True:
+                #move_right(len(l) - 1) -----> move all the way right
             # sort through everything unsorted:
-                # the current index = the held item
-                # if can_move_right() == True:
-                    #move_right
-                    #if compare_item() == 1:
-                        #swap_item()
-                        #swapped = True
-                    #if compare_item() == -1 or 0:
-                        #move_left()
-                        #swap_item()
-                #if swapped False:
-                #set_light_off()
-                # break  
+                #if compare_item() == 1:
+                    #swap_item()
+                    #move_left()
+                #if compare_item() == -1 or 0:
+                    #move_left()
+                #if compare_item() == None:
+                    #break
+        #set_light_off()
         #return l
 
 
