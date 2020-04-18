@@ -96,8 +96,76 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
+        #my pseudocode
+        '''
+         #when program is started set_light_on()
+        #welcome message - "Hello, I am your sorting robot"
+        #while light_is_on:
+        #for every item in the list
+            #swap_item() ---> something in my hand now
+            # if can_move_right() == True:
+                #move_right(len(l) - 1) -----> move all the way right
+            # sort through everything unsorted:
+                #if compare_item() == 1:
+                    #swap_item()
+                    #move_left()
+                #if compare_item() == -1 or 0:
+                    #move_left()
+                #if compare_item() == None:
+                    #break
+        #set_light_off()
+        #return l
+        '''
         # Fill this out
-        pass
+        self.set_light_on()
+        print('Hello, I am your sorting robot')
+
+        while self.light_is_on():
+            # for num in range(0, len(l) -1):
+                self.swap_item()
+                while self.can_move_right == True:
+                    self.move_right()
+                
+                # for unsorted in range(0, len(l)-1):
+                if self.compare_item() == 1:
+                    self.swap_item()
+                    self.move_left()
+                if self.compare_item() == -1 or 0:
+                    self.move_left()
+                if self.compare_item() == None:
+                    return None
+
+        self.set_light_off
+        
+
+                
+
+'''
+It can move left or right.
+It can pick up an item
+If it tries to pick up an item while already holding one, it will swap the items instead.
+It can compare the item it's holding to the item in front of it.
+It can switch a light on its head on or off. '''
+
+
+        #when program is started set_light_on()
+        #welcome message - "Hello, I am your sorting robot"
+        #while light_is_on:
+        #for every item in the list
+            #swap_item() ---> something in my hand now
+            # if can_move_right() == True:
+                #move_right(len(l) - 1) -----> move all the way right
+            # sort through everything unsorted:
+                #if compare_item() == 1:
+                    #swap_item()
+                    #move_left()
+                #if compare_item() == -1 or 0:
+                    #move_left()
+                #if compare_item() == None:
+                    #break
+        #set_light_off()
+        #return l
+
 
 
 if __name__ == "__main__":
